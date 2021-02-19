@@ -1,7 +1,7 @@
-@import './base.css';
-@import './components.css';
-@import './utilities.css';
-
 body {
-  background: rgb(2, 219, 165);
+  background: rgb(199, 199, 199);
+}
+
+* {
+  outline: 1px solid red;
 }

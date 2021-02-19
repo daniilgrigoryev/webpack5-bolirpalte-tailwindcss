@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rm -rf ./build",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-    "build": "yarn clean && webpack --mode=production --progress --color",
-    "dev": "webpack serve --mode=development"
+    "build": "npm clean && webpack --mode=production --progress --color",
+    "dev": "webpack serve --mode development --env development --hot"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -39,7 +39,7 @@
     "style-loader": "^2.0.0",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "^2.0.2",
+    "tailwindcss": "^2.0.3",
     "terser-webpack-plugin": "^5.1.1",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.2.0",

@@ -10,13 +10,16 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 const { argv } = require('process')
 
 module.exports = (env, argv) => {
-  const dev = argv.mode === 'development' ? true : false
+  const { mode = 'development' } = argv
+  const dev = mode === 'development'
+  const production = mode === 'production'
 
   return {
     entry: './src/index.js',
+    mode: dev ? 'development' : 'production',
     output: {
       path: path.resolve(__dirname, 'build'),
-      publicPath: '',
+      publicPath: '/',
       filename: dev ? '[name].js' : '[name].[hash].bundle.js',
       assetModuleFilename: 'images/[hash][ext][query]',
     },
@@ -42,18 +45,21 @@ module.exports = (env, argv) => {
         },
       ],
     },
-    devtool: false,
+    devtool: dev ? 'source-map' : false,
     devServer: {
       open: true,
       bonjour: true,
       compress: true,
       hot: true,
       historyApiFallback: true,
+      noInfo: true,
       contentBase: path.join(__dirname, 'build'),
-      overlay: {
-        warnings: true,
-        errors: true,
-      },
+    },
+    experiments: {
+      asyncWebAssembly: true,
+      syncWebAssembly: true,
+      outputModule: true,
+      topLevelAwait: true,
     },
     resolve: {
       alias: {
@@ -67,7 +73,12 @@ module.exports = (env, argv) => {
     },
     optimization: {
       minimize: true,
-      minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
+      minimizer: [
+        new OptimizeCssAssetsPlugin(),
+        new TerserJsPlugin({
+          cache: true,
+        }),
+      ],
       moduleIds: 'deterministic',
       runtimeChunk: {
         name: 'runtime',
@@ -84,10 +95,11 @@ module.exports = (env, argv) => {
       },
     },
     performance: {
-      hints: false,
+      hints: 'warning',
       maxEntrypointSize: 512000,
       maxAssetSize: 512000,
     },
+    target: 'web',
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/index.html',
