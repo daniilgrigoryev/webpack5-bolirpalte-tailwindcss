@@ -1,7 +1,30 @@
 body {
-  background: rgb(199, 199, 199);
+  background: #fff;
+  color: #333;
+  min-width: 768px;
 }
 
-* {
-  outline: 1px solid red;
+.hellow {
+  height: 630px;
+  background-image: url(../images/hellow.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.img-1 {
+  width: 320px;
+  height: 320px;
+  background-image: url(../images/img1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main-form {
+  width: 300px;
+}
+
+ul {
+  list-style: inside;
 }

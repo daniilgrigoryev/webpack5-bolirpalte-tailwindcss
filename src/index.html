@@ -2,28 +2,273 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>my-project</title>
+    <title>Doors project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <div class="container flex items-center justify-between px-6 py-2 mx-auto">
-        <a class="text-2xl font-bold lg:text-4xl" href="#"> SHMW </a>
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 text-gray-500 border border-gray-600 rounded appearance-none hover:text-gray-800 hover:border-teal-500 focus:outline-none">
-            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
+    <header>
+      <nav class="bg-gray-50">
+        <div class="flex justify-between px-6 py-4 mx-auto md:container">
+          <div>
+            <span class="font-serif text-lg font-light leading-1"
+              >Продажа и установка <br />
+              железных дверей под ключ</span
+            >
+            <br />
+            <span class="font-serif text-sm font-light leading-none"> email: <a data-cke-saved-href="#" href="http://dveri.optom@gmail.com" class="underline">dveri.optom@gmail.com</a> </span>
+          </div>
+          <div class="text-center">
+            <span class="font-serif text-xl font-light leading-1">
+              <i class="icofont-ui-call"></i>
+              <b>8 800 333 22 33</b>
+            </span>
+            <br />
+            <a href="#contacts" class="inline-block px-4 py-1 mt-2 ml-6 font-sans font-thin text-white border rounded focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">Заказать звонок</a>
+          </div>
         </div>
-        <div class="hidden lg:block">
-          <ul class="inline-flex">
-            <li><a class="px-4 font-bold" href="/">Home</a></li>
-            <li><a class="px-4 hover:text-gray-800" href="#">About</a></li>
-            <li><a class="px-4 hover:text-gray-800" href="#">Contact</a></li>
-          </ul>
+      </nav>
+    </header>
+    <section class="hellow">
+      <div class="container flex flex-wrap content-center justify-center h-full mx-auto">
+        <div class="px-6 py-6 h-96">
+          <h1 class="font-serif text-6xl font-bold text-white lg:text-6xl md:text-4xl">
+            Купить железные двери с <br />
+            установкой под ключ
+          </h1>
+          <h3 class="my-6 text-2xl font-thin text-white">
+            Оптовые поставки в Москву и регионы от 5 дней, возможно розничной <br />
+            покупки дверей для дома в нашей сети магазинов по всему городу
+          </h3>
+
+          <div class="text-center">
+            <a href="#contacts" class="inline-block px-3 py-4 font-sans text-2xl font-thin text-white border rounded-md w-96 focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">
+              Заказать звонок
+            </a>
+            <br />
+            <span class="inline-block my-2 font-thin text-white">Спешите, количество купонов ограничено!</span>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
+    <section>
+      <div class="container pt-20 mx-auto">
+        <div class="text-center">
+          <h3 class="font-serif text-4xl font-semibold">Лучший магазин дверей</h3>
+          <p class="mt-1 font-serif">Почему мы самая лучшая дверная компания в Москве?</p>
+        </div>
+        <div class="justify-center my-20 lg:flex lg:space-x-6 lg:flex-row md:flex-col">
+          <div class="my-6 lg:w-1/5">
+            <div class="flex items-center justify-center w-40 h-40 mx-auto rounded-full text-8xl bg-dust-50">
+              <i class="icofont-check"></i>
+            </div>
+            <p class="my-4 text-lg font-semibold text-center text-gray-800">7 лет опыта на рынке</p>
+            <p class="text-base font-thin text-center text-gray-800">Уже более 7 лет наша компания работает на рынке и пользуется огромной популярностью</p>
+          </div>
+          <div class="my-6 lg:w-1/5">
+            <div class="flex items-center justify-center w-40 h-40 mx-auto rounded-full text-7xl bg-dust-50">
+              <i class="icofont-money"></i>
+            </div>
+            <p class="my-4 text-lg font-semibold text-center text-gray-800">Выгодные цены</p>
+            <p class="text-base font-thin text-center text-gray-800">Только в нашем магазине Вы можете сделать заказ по самой низкой цене!</p>
+          </div>
+          <div class="my-6 lg:w-1/5">
+            <div class="flex items-center justify-center w-40 h-40 mx-auto rounded-full text-7xl bg-dust-50">
+              <i class="icofont-external"></i>
+            </div>
+            <p class="my-4 text-lg font-semibold text-center text-gray-800">Доставка по России</p>
+            <p class="text-base font-thin text-center text-gray-800">Доставим Ваш заказ в любую точку России и совершенно бесплатно!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section>
+      <div class="container py-20 mx-auto">
+        <div class="text-center">
+          <h3 class="font-serif text-4xl font-semibold">О нашей работе</h3>
+          <p class="mt-1 font-serif">Многолетний опыт работы подбора и установки дверей</p>
+        </div>
+        <div class="px-6 mx-auto my-6 lg:w-8/12 md:w-full">
+          <p class="my-3 font-sans font-thin color-gray-800">
+            Разнообразный и богатый опыт сложившаяся структура организации позволяет оценить значение форм развития. Задача организации, в особенности же дальнейшее развитие различных форм
+            деятельности способствует подготовки и реализации модели развития.
+          </p>
+          <p class="my-3 font-sans font-thin color-gray-800">
+            Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции требуют определения и уточнения систем массового участия. Значимость этих проблем
+            настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих
+            проблем настолько очевидна, что начало повседневной работы по формированию позиции требуют от нас анализа существенных финансовых и административных условий.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100">
+      <div class="container py-20 mx-auto">
+        <div class="text-center">
+          <h3 class="font-serif text-4xl font-semibold">Каталог лучших дверей</h3>
+          <p class="mt-1 font-serif">У нас вы можете заказать дверь и получите установку в подарок совершенно бесплатно</p>
+        </div>
+
+        <div class="flex flex-row flex-wrap my-20">
+          <div class="box-border flex flex-row p-6 bg-white lg:w-1/3 md:w-full">
+            <div class="img-1"></div>
+            <div class="w-full ml-4">
+              <h4 class="font-serif text-2xl color-gray-800">Название товара</h4>
+              <p class="my-1 text-base font-thin color-gray-800">Подробное описание продукта. Здесь вы можете расписать:</p>
+              <ul class="ml-4 font-thin color-gray-800">
+                <li>свойства товара</li>
+                <li>параметры товара</li>
+                <li>описание товара</li>
+                <li>наличие на складе</li>
+                <li>цвет</li>
+                <li>количество</li>
+              </ul>
+              <a href="#contacts" class="inline-block px-4 py-1 my-3 font-sans font-thin text-white border focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="box-border flex flex-row p-6 bg-white lg:w-1/3 md:w-full">
+            <div class="img-1"></div>
+            <div class="w-full ml-4">
+              <h4 class="font-serif text-2xl color-gray-800">Название товара</h4>
+              <p class="my-1 text-base font-thin color-gray-800">Подробное описание продукта. Здесь вы можете расписать:</p>
+              <ul class="ml-4 font-thin color-gray-800">
+                <li>свойства товара</li>
+                <li>параметры товара</li>
+                <li>описание товара</li>
+                <li>наличие на складе</li>
+                <li>цвет</li>
+                <li>количество</li>
+              </ul>
+              <a href="#contacts" class="inline-block px-4 py-1 my-3 font-sans font-thin text-white border focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="box-border flex flex-row p-6 bg-white lg:w-1/3 md:w-full">
+            <div class="img-1"></div>
+            <div class="w-full ml-4">
+              <h4 class="font-serif text-2xl color-gray-800">Название товара</h4>
+              <p class="my-1 text-base font-thin color-gray-800">Подробное описание продукта. Здесь вы можете расписать:</p>
+              <ul class="ml-4 font-thin color-gray-800">
+                <li>свойства товара</li>
+                <li>параметры товара</li>
+                <li>описание товара</li>
+                <li>наличие на складе</li>
+                <li>цвет</li>
+                <li>количество</li>
+              </ul>
+              <a href="#contacts" class="inline-block px-4 py-1 my-3 font-sans font-thin text-white border focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="box-border flex flex-row p-6 bg-white lg:w-1/3 md:w-full">
+            <div class="img-1"></div>
+            <div class="w-full ml-4">
+              <h4 class="font-serif text-2xl color-gray-800">Название товара</h4>
+              <p class="my-1 text-base font-thin color-gray-800">Подробное описание продукта. Здесь вы можете расписать:</p>
+              <ul class="ml-4 font-thin color-gray-800">
+                <li>свойства товара</li>
+                <li>параметры товара</li>
+                <li>описание товара</li>
+                <li>наличие на складе</li>
+                <li>цвет</li>
+                <li>количество</li>
+              </ul>
+              <a href="#contacts" class="inline-block px-4 py-1 my-3 font-sans font-thin text-white border focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="box-border flex flex-row p-6 bg-white lg:w-1/3 md:w-full">
+            <div class="img-1"></div>
+            <div class="w-full ml-4">
+              <h4 class="font-serif text-2xl color-gray-800">Название товара</h4>
+              <p class="my-1 text-base font-thin color-gray-800">Подробное описание продукта. Здесь вы можете расписать:</p>
+              <ul class="ml-4 font-thin color-gray-800">
+                <li>свойства товара</li>
+                <li>параметры товара</li>
+                <li>описание товара</li>
+                <li>наличие на складе</li>
+                <li>цвет</li>
+                <li>количество</li>
+              </ul>
+              <a href="#contacts" class="inline-block px-4 py-1 my-3 font-sans font-thin text-white border focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">Заказать звонок</a>
+            </div>
+          </div>
+          <div class="box-border flex flex-row p-6 bg-white lg:w-1/3 md:w-full">
+            <div class="img-1"></div>
+            <div class="w-full ml-4">
+              <h4 class="font-serif text-2xl color-gray-800">Название товара</h4>
+              <p class="my-1 text-base font-thin color-gray-800">Подробное описание продукта. Здесь вы можете расписать:</p>
+              <ul class="ml-4 font-thin color-gray-800">
+                <li>свойства товара</li>
+                <li>параметры товара</li>
+                <li>описание товара</li>
+                <li>наличие на складе</li>
+                <li>цвет</li>
+                <li>количество</li>
+              </ul>
+              <a href="#contacts" class="inline-block px-4 py-1 my-3 font-sans font-thin text-white border focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="flex" id="contacts">
+      <div class="w-1/2">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad596d74da5561de52fa7cae8a21afdfe5a5e0d80a2f9189960bedacfdda26769&amp;source=constructor" width="100%" height="480" frameborder="0"></iframe>
+      </div>
+      <div class="w-1/2 bg-dust-50">
+        <div class="m-6 font-thin text-gray-800">
+          <p>Контактная информация:</p>
+          <p>Чебоксары, школьный проезд 1.</p>
+          <p>E-mail: Test@yandex.ru</p>
+          <p>Телефон: 8 800 300 06 00 отдела продаж</p>
+          <p>Телефон: 8 800 340 06 00 отдела сбыта</p>
+          <p>Контактное лицо: Степанов В.И.</p>
+        </div>
+
+
+        <form class="flex flex-col justify-center p-6 main-form">
+          <div class="flex flex-col">
+              <label for="name" class="hidden">Имя</label>
+              <input type="name" name="name" id="name" placeholder="Имя" class="px-3 py-2 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:outline-none">
+          </div>
+
+          <div class="flex flex-col mt-2">
+              <label for="email" class="hidden">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" class="px-3 py-2 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:outline-none">
+          </div>
+
+          <div class="flex flex-col mt-2">
+              <label for="tel" class="hidden">Телефон</label>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон" class="px-2 py-2 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:outline-none">
+          </div>
+
+          <button type="submit" class="w-full px-4 py-3 mt-2 font-sans text-xl font-thin text-white border rounded focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">
+              Заказать звонок
+          </button>
+      </form>
+      </div>
+
+    </div>
+    <footer>
+      <nav class="bg-gray-50">
+        <div class="flex justify-between px-6 py-4 mx-auto md:container">
+          <div>
+            <span class="font-serif text-lg font-light leading-1">Продажа и установка <br />железных дверей под ключ</span>
+            <br />
+            <span class="font-serif text-sm font-light leading-none">
+              ООО «СтройТрейд», 123456, г.Москва, ул. Центральная 1, офис 1 <br>
+              ИНН 1234567890 ОГРН 123456789012
+            </span>
+          </div>
+          <div class="text-center">
+            <span class="font-serif text-xl font-light leading-1">
+              <i class="icofont-ui-call"></i>
+              <b>8 800 333 22 33</b>
+            </span>
+            <br />
+            <a href="#contacts" class="inline-block px-4 py-1 mt-2 ml-6 font-sans font-thin text-white border rounded focus:outline-none bg-dust-900 border-dust-800 hover:bg-dust-800">Заказать звонок</a>
+          </div>
+        </div>
+      </nav>
+    </ащ>
   </body>
 </html>
